@@ -42,5 +42,8 @@ for (const image of images) {
   imageElem.alt = image.alt;
   imageElem.width = 360;
   imageElem.height = 300;
-  gallery.append(imageElem);
+
+  imageElements.push(imageElem);
 }
+
+gallery.append(...imageElements);
